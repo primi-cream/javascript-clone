@@ -3,17 +3,15 @@ const mainTodo = document.querySelector("#todo > input");
 const userFocus = document.querySelector(".main-container");
 // const todoFocus = document.querySelector("#todo");
 
+
 const MAIN_TODO_KEY = "main-todo";
 
 let focusTodo = "";
 
-if(saveUsername !== null){
-    todoFocus.classList.remove("hidden");
-}
 
-function saveMainTodo(){
-    localStorage.setItem(MAIN_TODO_KEY,focusTodo);
-}
+// function saveMainTodo(){
+//     localStorage.setItem(MAIN_TODO_KEY,focusTodo);
+// }
 
 function paintMainFocus(focusObj){
     todoFocus.classList.add(HIDEN_CLASSNAME);
@@ -33,13 +31,11 @@ function paintMainFocus(focusObj){
     userFocus.appendChild(div);
 }
 
-function clickCheck(boolean){
-    
-}
+
 
 
 function handleMainTodo(event){
-    console.log("sss : ", event);
+    // console.log("sss : ", event);
     if(event.key==="Enter"){
         const focusValue = mainTodo.value;
         if(focusValue !== ""){
@@ -48,8 +44,9 @@ function handleMainTodo(event){
                 id: "today-focus"
             };
             paintMainFocus(todoFocusObj);  
-            focusTodo = focusValue;
-            saveMainTodo();
+            // focusTodo = focusValue;
+            // saveMainTodo();
+            
         }else{
             // event.preventDefault();
             console.log("Empty");
