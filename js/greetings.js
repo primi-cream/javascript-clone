@@ -25,3 +25,6 @@ login.addEventListener("keyup", getGreeting)
 
 const saveUsername = localStorage.getItem(USERNAME_KEY);
 
+if(saveUsername !== null){
+    paintGreetings(saveUsername);
+}

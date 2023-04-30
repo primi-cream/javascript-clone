@@ -5,6 +5,15 @@ body{
     height: 100vh;
 }
 
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 350px;
+    min-height: 450px;
+}
+
 #clock{
     font-size: 90px;
     font-weight: 900;
@@ -12,4 +21,24 @@ body{
 
 .hidden{
     display: none;
+}
+
+#login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login > input{
+    border:none;
+    border-right: 0px;
+    border-top: 0px;
+    border-left:0px;
+    border-bottom: 1px solid black;
+    width: 300px;
+    font-size: 30px;
+}
+
+#login > input:focus{
+    outline: none;
 }
