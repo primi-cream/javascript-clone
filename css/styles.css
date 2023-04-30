@@ -10,6 +10,11 @@ body{
     height: 100vh;
 }
 
+header{
+    display: flex;
+    justify-content: flex-end;
+}
+
 footer{
     height: 10vh;
     max-height: 10vh;
