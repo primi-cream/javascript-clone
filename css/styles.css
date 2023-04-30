@@ -64,7 +64,7 @@ input[name=username]::placeholder{
 }
 
 #todo > input{
-    font-size: 25px;
+    font-size: 20px;
 }
 
 #today-focus{
@@ -75,3 +75,38 @@ input[name=username]::placeholder{
     font-size: 20px;
     margin-top: 20px;
 }
+
+#today-focus > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#today-focus label{
+    min-width: 20px;
+}
+
+#check{
+    width: 15px;
+    position: relative;
+    top: 3px;
+}
+
+input[type="checkbox"]{
+    accent-color: #999;
+}
+
+/* input[type="checkbox"]{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 1px solid #999;
+    appearance: none; 
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+input[type="checkbox"]:checked{
+    background: #32e732;
+    border: none;
+}  */

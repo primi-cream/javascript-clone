@@ -1,6 +1,7 @@
 const greetings = document.querySelector("#greetings");
 const login = document.querySelector("#login");
 const loginValue = document.querySelector("#login > input");
+const todoFocus = document.querySelector("#todo");
 
 const USERNAME_KEY = "username";
 const HIDEN_CLASSNAME = "hidden";
@@ -18,6 +19,7 @@ function getGreeting(event){
 
 function paintGreetings(username){
     greetings.innerText = `Hello ${username}`;
+    todoFocus.classList.remove("hidden");
 }
 
 
@@ -28,3 +30,4 @@ const saveUsername = localStorage.getItem(USERNAME_KEY);
 if(saveUsername !== null){
     paintGreetings(saveUsername);
 }
+
